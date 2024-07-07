@@ -1,0 +1,92 @@
+﻿@model AspNetCoreAjaxCrud.Models.DBEntities.Product
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="float-start">@ViewData["Title"]</h2>
+                <button type="button" id="addProductBtn" class="float-end btn btn-success" data-bs-toggle="modal" data-bs-target="#ProductModal">
+                    Add Product
+                </button>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-striped table-responsive table-hover" id="productTbl">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Id)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ProductName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ProductImage)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Price)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Qty)
+                            </th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productTblBody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ProductModal" tabindex="-1" aria-labelledby="ProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="ProductModalLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="Id" value="0" />
+                <div class="mb-2">
+                    <label for="ProductName">Product Name</label>
+                    <input type="text" id="ProductName" class="form-control" placeholder="Product Name" />
+                </div>
+                <div class="mb-2">
+                    <label for="Price">Price</label>
+                    <input type="number" id="Price" class="form-control" placeholder="Product Price" />
+                </div>
+                <div class="mb-2">
+                    <label for="Qty">Quantity</label>
+                    <input type="number" id="Qty" class="form-control" placeholder="Product Quantity" />
+                </div>
+                <div class="mb-2">
+                    <label for="ProductImage">Product Image</label>
+                    <input type="file" id="ProductImage" class="form-control" onchange="readUrl(this)" />
+                </div>
+                <div class="mb-2">
+                    <img src="" id="imageFile" class="mt-2" style="width:100px; height:100px;"/>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="save" class="btn btn-primary" onclick="Insert()">Insert</button>
+                <button type="button" id="update" class="btn btn-primary" onclick="Update()" style="display:none;">Update</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script src="~/js/product.js"></script>
