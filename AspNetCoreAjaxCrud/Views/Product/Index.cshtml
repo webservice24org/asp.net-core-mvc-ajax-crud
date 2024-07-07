@@ -55,6 +55,7 @@
             </div>
             <div class="modal-body">
                 <input type="hidden" id="Id" value="0" />
+                <input type="hidden" id="ProductImageOld" value="" />
                 <div class="mb-2">
                     <label for="ProductName">Product Name</label>
                     <input type="text" id="ProductName" class="form-control" placeholder="Product Name" />
@@ -72,7 +73,7 @@
                     <input type="file" id="ProductImage" class="form-control" onchange="readUrl(this)" />
                 </div>
                 <div class="mb-2">
-                    <img src="" id="imageFile" class="mt-2" style="width:100px; height:100px;"/>
+                    <img src="" id="imageFile" class="mt-2" style="width:100px; height:100px; display:none;" />
                 </div>
             </div>
             <div class="modal-footer">

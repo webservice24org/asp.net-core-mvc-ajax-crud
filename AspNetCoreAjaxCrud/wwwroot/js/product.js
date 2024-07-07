@@ -6,14 +6,12 @@ function readUrl(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function (e) {
-            $('#imageFile')
-                .attr('src', e.target.result)
-                .width(100)
-                .height(100);
+            $('#imageFile').attr('src', e.target.result).show();
         };
         reader.readAsDataURL(input.files[0]);
     }
 }
+
 function GetProducts() {
     $.ajax({
         url: '/Product/GetProducts',
@@ -92,8 +90,8 @@ function Insert() {
 
 function Edit(id) {
     $.ajax({
-        url: '/Product/EditProducct?id=' + id, 
-        type: 'GET', 
+        url: '/Product/EditProduct?id=' + id,
+        type: 'GET',
         dataType: 'json',
         contentType: 'application/json;charset=utf-8',
         success: function (response) {
@@ -108,6 +106,13 @@ function Edit(id) {
                 $('#ProductName').val(response.productName);
                 $('#Price').val(response.price);
                 $('#Qty').val(response.qty);
+                $('#ProductImageOld').val(response.productImage);
+
+                if (response.productImage) {
+                    $('#imageFile').attr('src', response.productImage).show();
+                } else {
+                    $('#imageFile').hide();
+                }
             }
         },
         error: function () {
@@ -117,20 +122,25 @@ function Edit(id) {
 }
 
 
+
 function Update() {
-    var formData = {
-        Id: parseInt($('#Id').val()), 
-        ProductName: $('#ProductName').val(),
-        Price: parseFloat($('#Price').val()),
-        Qty: parseInt($('#Qty').val())
-    };
+    var formData = new FormData();
+    formData.append('Id', $('#Id').val());
+    formData.append('ProductName', $('#ProductName').val());
+    formData.append('Price', parseFloat($('#Price').val()));
+    formData.append('Qty', parseInt($('#Qty').val()));
+
+    var imageFile = $('#ProductImage')[0].files[0];
+    if (imageFile) {
+        formData.append('ProductImageFile', imageFile);
+    }
 
     $.ajax({
         url: '/Product/UpdateProducct',
-        data: JSON.stringify(formData), 
+        data: formData,
         type: 'POST',
-        contentType: 'application/json; charset=utf-8',
-        dataType: 'json',
+        contentType: false,
+        processData: false,
         success: function (response) {
             if (response.message) {
                 alert('Error: ' + response.message + '\nDetails: ' + (response.errors ? response.errors.join(', ') : response.error));
@@ -138,12 +148,14 @@ function Update() {
                 GetProducts();
                 $('#ProductModal').modal('hide');
                 $('#ProductModal').find('input').val('');
+                $('#imageFile').attr('src', '');
             }
         },
         error: function () {
-            alert('Unable to Update Product');
+            alert('Unable to Update Data');
         }
     });
 }
+
 
 

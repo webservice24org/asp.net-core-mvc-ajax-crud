@@ -1,41 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\",
+  "WorkspaceRootPath": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|g:\\mvc_core\\aspnetcoreajaxcrud\\aspnetcoreajaxcrud\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|solutionrelative:aspnetcoreajaxcrud\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|g:\\mvc_core\\aspnetcoreajaxcrud\\aspnetcoreajaxcrud\\wwwroot\\js\\product.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|d:\\mohiuddin-1280860\\mvc_core\\projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\aspnetcoreajaxcrud\\wwwroot\\js\\product.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|solutionrelative:aspnetcoreajaxcrud\\wwwroot\\js\\product.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|g:\\mvc_core\\aspnetcoreajaxcrud\\aspnetcoreajaxcrud\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|d:\\mohiuddin-1280860\\mvc_core\\projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\aspnetcoreajaxcrud\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|solutionrelative:aspnetcoreajaxcrud\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|g:\\mvc_core\\aspnetcoreajaxcrud\\aspnetcoreajaxcrud\\models\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|d:\\mohiuddin-1280860\\mvc_core\\projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\aspnetcoreajaxcrud\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|solutionrelative:aspnetcoreajaxcrud\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|d:\\mohiuddin-1280860\\mvc_core\\projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\aspnetcoreajaxcrud\\models\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|solutionrelative:aspnetcoreajaxcrud\\models\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|g:\\mvc_core\\aspnetcoreajaxcrud\\aspnetcoreajaxcrud\\models\\dbentities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|d:\\mohiuddin-1280860\\mvc_core\\projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\aspnetcoreajaxcrud\\models\\dbentities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|solutionrelative:aspnetcoreajaxcrud\\models\\dbentities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|g:\\mvc_core\\aspnetcoreajaxcrud\\aspnetcoreajaxcrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|d:\\mohiuddin-1280860\\mvc_core\\projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\aspnetcoreajaxcrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|solutionrelative:aspnetcoreajaxcrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|g:\\mvc_core\\aspnetcoreajaxcrud\\aspnetcoreajaxcrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|d:\\mohiuddin-1280860\\mvc_core\\projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\aspnetcoreajaxcrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|solutionrelative:aspnetcoreajaxcrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|g:\\mvc_core\\aspnetcoreajaxcrud\\aspnetcoreajaxcrud\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|d:\\mohiuddin-1280860\\mvc_core\\projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\aspnetcoreajaxcrud\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|solutionrelative:aspnetcoreajaxcrud\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|g:\\mvc_core\\aspnetcoreajaxcrud\\aspnetcoreajaxcrud\\dal\\aspajaxcrudcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|d:\\mohiuddin-1280860\\mvc_core\\projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\aspnetcoreajaxcrud\\dal\\aspajaxcrudcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2305A4FA-FFD0-4A38-A7A8-8800FCAA37C4}|AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud.csproj|solutionrelative:aspnetcoreajaxcrud\\dal\\aspajaxcrudcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,69 +46,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ProductViewModel.cs",
-              "DocumentMoniker": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\Models\\ViewModels\\ProductViewModel.cs",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\Models\\ViewModels\\ProductViewModel.cs",
               "RelativeDocumentMoniker": "AspNetCoreAjaxCrud\\Models\\ViewModels\\ProductViewModel.cs",
-              "ToolTip": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\Models\\ViewModels\\ProductViewModel.cs",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\Models\\ViewModels\\ProductViewModel.cs",
               "RelativeToolTip": "AspNetCoreAjaxCrud\\Models\\ViewModels\\ProductViewModel.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAUwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T07:47:14.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T07:47:14.835Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Product.cs",
-              "DocumentMoniker": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\Models\\DBEntities\\Product.cs",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\Models\\DBEntities\\Product.cs",
               "RelativeDocumentMoniker": "AspNetCoreAjaxCrud\\Models\\DBEntities\\Product.cs",
-              "ToolTip": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\Models\\DBEntities\\Product.cs",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\Models\\DBEntities\\Product.cs",
               "RelativeToolTip": "AspNetCoreAjaxCrud\\Models\\DBEntities\\Product.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAUwBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T07:15:41.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T07:15:41.294Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\Program.cs",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\Program.cs",
               "RelativeDocumentMoniker": "AspNetCoreAjaxCrud\\Program.cs",
-              "ToolTip": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\Program.cs",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\Program.cs",
               "RelativeToolTip": "AspNetCoreAjaxCrud\\Program.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T04:45:44.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T04:45:44.371Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\Views\\Product\\Index.cshtml",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "AspNetCoreAjaxCrud\\Views\\Product\\Index.cshtml",
-              "ToolTip": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\Views\\Product\\Index.cshtml",
               "RelativeToolTip": "AspNetCoreAjaxCrud\\Views\\Product\\Index.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADAAAAAAAAAA",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAYwF0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-06T16:38:45.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ProductController.cs",
-              "DocumentMoniker": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\Controllers\\ProductController.cs",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "AspNetCoreAjaxCrud\\Controllers\\ProductController.cs",
-              "ToolTip": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\Controllers\\ProductController.cs",
               "RelativeToolTip": "AspNetCoreAjaxCrud\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAmwFAAAAAJAAAA",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAgwJMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-06T16:24:54.36Z",
               "EditorCaption": ""
@@ -117,24 +114,23 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "appsettings.json",
-              "DocumentMoniker": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\appsettings.json",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\appsettings.json",
               "RelativeDocumentMoniker": "AspNetCoreAjaxCrud\\appsettings.json",
-              "ToolTip": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\appsettings.json",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\appsettings.json",
               "RelativeToolTip": "AspNetCoreAjaxCrud\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-06T16:15:12.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T16:15:12.475Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "product.js",
-              "DocumentMoniker": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\wwwroot\\js\\product.js",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\wwwroot\\js\\product.js",
               "RelativeDocumentMoniker": "AspNetCoreAjaxCrud\\wwwroot\\js\\product.js",
-              "ToolTip": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\wwwroot\\js\\product.js",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\wwwroot\\js\\product.js",
               "RelativeToolTip": "AspNetCoreAjaxCrud\\wwwroot\\js\\product.js",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAcwFoAAAAAAAAA",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAqwKEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-07-06T16:41:56.602Z",
               "EditorCaption": ""
@@ -143,27 +139,25 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "AspAjaxCrudContext.cs",
-              "DocumentMoniker": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\DAL\\AspAjaxCrudContext.cs",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\DAL\\AspAjaxCrudContext.cs",
               "RelativeDocumentMoniker": "AspNetCoreAjaxCrud\\DAL\\AspAjaxCrudContext.cs",
-              "ToolTip": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\DAL\\AspAjaxCrudContext.cs",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\DAL\\AspAjaxCrudContext.cs",
               "RelativeToolTip": "AspNetCoreAjaxCrud\\DAL\\AspAjaxCrudContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T16:12:10.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T16:12:10.88Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AspNetCoreAjaxCrud\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC_CORE\\Projects\\ajax-crud\\asp.net-core-mvc-ajax-crud\\AspNetCoreAjaxCrud\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "AspNetCoreAjaxCrud\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAACcAAAAAAAAAAIBJwDMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-06T17:17:55.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T17:17:55.26Z"
             }
           ]
         }
