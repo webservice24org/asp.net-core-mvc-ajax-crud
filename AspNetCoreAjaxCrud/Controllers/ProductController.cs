@@ -90,6 +90,7 @@ namespace AspNetCoreAjaxCrud.Controllers
             };
 
             return Json(productViewModel);
+<<<<<<< HEAD
         }
 
 
@@ -136,9 +137,13 @@ namespace AspNetCoreAjaxCrud.Controllers
 
             return Json("Product Updated Successfully");
 
+=======
+>>>>>>> 81bd07ccf1098332ee5dd3c51a35f8c423d9375a
         }
 
+
         [HttpPost]
+<<<<<<< HEAD
         public JsonResult DeleteProduct(int id)
         {
             try
@@ -168,7 +173,51 @@ namespace AspNetCoreAjaxCrud.Controllers
             catch (Exception ex)
             {
                 return Json(new { message = "Error while deleting data!", error = ex.Message });
+=======
+        public JsonResult UpdateProducct([FromForm] ProductViewModel model)
+        {
+
+            var product = _context.Products.Find(model.Id);
+
+            if (product == null)
+            {
+                return Json(new { message = "Product not found" });
             }
+
+            if (model.ProductImageFile != null && model.ProductImageFile.Length > 0)
+            {
+                string fileName = Path.GetFileName(model.ProductImageFile.FileName);
+                string webRootPath = _webHostEnvironment.WebRootPath;
+                string imagePath = Path.Combine(webRootPath, "Images", fileName);
+
+                // Delete the old image if it exists
+                if (!string.IsNullOrEmpty(product.ProductImage))
+                {
+                    string oldImagePath = Path.Combine(webRootPath, product.ProductImage.TrimStart('/'));
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
+
+                using (var stream = new FileStream(imagePath, FileMode.Create))
+                {
+                    model.ProductImageFile.CopyTo(stream);
+                }
+
+                product.ProductImage = "/Images/" + fileName; // Update image path
+>>>>>>> 81bd07ccf1098332ee5dd3c51a35f8c423d9375a
+            }
+
+            product.ProductName = model.ProductName;
+            product.Price = model.Price;
+            product.Qty = model.Qty;
+
+            _context.Products.Update(product);
+            _context.SaveChanges();
+
+            return Json("Product Updated Successfully");
+
         }
 
 

@@ -123,6 +123,11 @@ function Edit(id) {
     });
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 81bd07ccf1098332ee5dd3c51a35f8c423d9375a
 function Update() {
     var formData = new FormData();
     formData.append('Id', $('#Id').val());
@@ -158,6 +163,7 @@ function Update() {
     });
 }
 
+<<<<<<< HEAD
 function Delete(id) {
     Swal.fire({
         title: 'Are you sure?',
@@ -191,3 +197,7 @@ function Delete(id) {
         }
     });
 }
+=======
+
+
+>>>>>>> 81bd07ccf1098332ee5dd3c51a35f8c423d9375a
