@@ -6,6 +6,8 @@
     <title>@ViewData["Title"] - AspNetCoreAjaxCrud</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link href="~/lib/datatable/css/datatable.min.css" rel="stylesheet" />
+    <link href="~/lib/sweetalert2/sweetalert2.min.css" rel="stylesheet" />
+    <link href="~/lib/toastr.js/toastr.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AspNetCoreAjaxCrud.styles.css" asp-append-version="true" />
 </head>
@@ -48,6 +50,30 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/datatable/js/datatable.min.js"></script>
+    <script src="~/lib/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="~/lib/toastr.js/toastr.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        ﻿$(document).ready(function () {
+
+            toastr.options = {
+                closeButton: true,
+                progressBar: true,
+                positionClass: 'toast-top-right',
+                showDuration: 300,
+                hideDuration: 1000,
+                timeOut: 5000,
+                extendedTimeOut: 1000,
+                showEasing: 'swing',
+                hideEasing: 'linear',
+                showMethod: 'fadeIn',
+                hideMethod: 'fadeOut',
+                tapToDismiss: false
+            };
+
+
+        });
+    </script>
 </body>
 </html>

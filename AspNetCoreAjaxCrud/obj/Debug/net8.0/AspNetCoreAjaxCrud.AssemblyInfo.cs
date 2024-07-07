@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspNetCoreAjaxCrud")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f8302cefbbab04469927354d0220e2e9e961a7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetCoreAjaxCrud")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetCoreAjaxCrud")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

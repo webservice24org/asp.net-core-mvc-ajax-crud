@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\AspNetCoreAjaxCrud.bundle.scp.css"
     },
     {
+      "Id": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\wwwroot\\Images\\448110745_1006981687673525_6506448437084217717_n.jpg",
+      "PackagePath": "staticwebassets\\Images\\448110745_1006981687673525_6506448437084217717_n.jpg"
+    },
+    {
       "Id": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -291,6 +295,22 @@
     {
       "Id": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\wwwroot\\lib\\jquery\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\wwwroot\\lib\\sweetalert2\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\wwwroot\\lib\\sweetalert2\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\sweetalert2.min.css"
+    },
+    {
+      "Id": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\wwwroot\\lib\\toastr.js\\toastr.min.css",
+      "PackagePath": "staticwebassets\\lib\\toastr.js\\toastr.min.css"
+    },
+    {
+      "Id": "G:\\MVC_Core\\AspNetCoreAjaxCrud\\AspNetCoreAjaxCrud\\wwwroot\\lib\\toastr.js\\toastr.min.js",
+      "PackagePath": "staticwebassets\\lib\\toastr.js\\toastr.min.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AspNetCoreAjaxCrud.Microsoft.AspNetCore.StaticWebAssets.props",

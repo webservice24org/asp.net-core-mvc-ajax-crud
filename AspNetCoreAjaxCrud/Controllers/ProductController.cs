@@ -17,7 +17,7 @@ namespace AspNetCoreAjaxCrud.Controllers
 
         public ProductController(IWebHostEnvironment webHostEnvironment, AspAjaxCrudContext context)
         {
-            _webHostEnvironment = webHostEnvironment; 
+            _webHostEnvironment = webHostEnvironment;
             _context = context;
         }
 
@@ -42,31 +42,29 @@ namespace AspNetCoreAjaxCrud.Controllers
                         model.ProductImageFile.CopyTo(stream);
                     }
 
-                    model.ProductImage = "/Images/" + fileName; 
+                    model.ProductImage = "/Images/" + fileName;
                 }
 
-                
+
                 var product = new Product
                 {
                     ProductName = model.ProductName,
                     Price = model.Price,
                     Qty = model.Qty,
-                    ProductImage = model.ProductImage 
+                    ProductImage = model.ProductImage
                 };
 
                 _context.Products.Add(product);
                 _context.SaveChanges();
 
-                return Json(product); 
+                return Json(product);
             }
             catch (Exception ex)
             {
                 return Json(new { message = "Error while saving data!", error = ex.Message });
             }
-            
+
         }
-
-
         public JsonResult GetProducts()
         {
             var products = _context.Products.ToList();
@@ -74,28 +72,104 @@ namespace AspNetCoreAjaxCrud.Controllers
         }
 
         [HttpGet]
-        public JsonResult EditProducct(int id)
+        public JsonResult EditProduct(int id)
         {
-            var product = _context.Products.SingleOrDefault(p => p.Id == id);
-            return Json(product);
+            var product = _context.Products.FirstOrDefault(p => p.Id == id);
+            if (product == null)
+            {
+                return Json(new { message = "Product not found!" });
+            }
+
+            var productViewModel = new ProductViewModel
+            {
+                Id = product.Id,
+                ProductName = product.ProductName,
+                Price = product.Price,
+                Qty = product.Qty,
+                ProductImage = product.ProductImage
+            };
+
+            return Json(productViewModel);
+        }
+
+
+        [HttpPost]
+        public JsonResult UpdateProducct([FromForm] ProductViewModel model)
+        {
+
+            var product = _context.Products.Find(model.Id);
+
+            if (product == null)
+            {
+                return Json(new { message = "Product not found" });
+            }
+
+            if (model.ProductImageFile != null && model.ProductImageFile.Length > 0)
+            {
+                string fileName = Path.GetFileName(model.ProductImageFile.FileName);
+                string webRootPath = _webHostEnvironment.WebRootPath;
+                string imagePath = Path.Combine(webRootPath, "Images", fileName);
+
+                if (!string.IsNullOrEmpty(product.ProductImage))
+                {
+                    string oldImagePath = Path.Combine(webRootPath, product.ProductImage.TrimStart('/'));
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
+
+                using (var stream = new FileStream(imagePath, FileMode.Create))
+                {
+                    model.ProductImageFile.CopyTo(stream);
+                }
+
+                product.ProductImage = "/Images/" + fileName; 
+            }
+
+            product.ProductName = model.ProductName;
+            product.Price = model.Price;
+            product.Qty = model.Qty;
+
+            _context.Products.Update(product);
+            _context.SaveChanges();
+
+            return Json("Product Updated Successfully");
+
         }
 
         [HttpPost]
-        public JsonResult UpdateProducct([FromBody] Product product)
+        public JsonResult DeleteProduct(int id)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _context.Products.Update(product);
+                var product = _context.Products.Find(id);
+
+                if (product == null)
+                {
+                    return Json(new { message = "Product not found" });
+                }
+
+                if (!string.IsNullOrEmpty(product.ProductImage))
+                {
+                    string webRootPath = _webHostEnvironment.WebRootPath;
+                    string oldImagePath = Path.Combine(webRootPath, product.ProductImage.TrimStart('/'));
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
+
+                _context.Products.Remove(product);
                 _context.SaveChanges();
-                return Json("Product Updated Successfully");
+
+                return Json(new { message = "Product deleted successfully" });
             }
-            else
+            catch (Exception ex)
             {
-                var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
-                return Json(new { message = "Model Validation Failed", errors = errors });
+                return Json(new { message = "Error while deleting data!", error = ex.Message });
             }
         }
-
 
 
     }

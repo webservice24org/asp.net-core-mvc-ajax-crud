@@ -12,6 +12,22 @@
     {
       "library": "datatable@2.0.2",
       "destination": "wwwroot/lib/datatable/"
+    },
+    {
+      "library": "sweetalert2@11.12.2",
+      "destination": "wwwroot/lib/sweetalert2/",
+      "files": [
+        "sweetalert2.min.css",
+        "sweetalert2.all.min.js"
+      ]
+    },
+    {
+      "library": "toastr.js@2.1.4",
+      "destination": "wwwroot/lib/toastr.js/",
+      "files": [
+        "toastr.min.js",
+        "toastr.min.css"
+      ]
     }
   ]
 }

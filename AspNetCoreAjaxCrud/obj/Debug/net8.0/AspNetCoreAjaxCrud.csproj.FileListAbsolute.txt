@@ -251,3 +251,4 @@ G:\MVC_Core\AspNetCoreAjaxCrud\AspNetCoreAjaxCrud\bin\Debug\net8.0\runtimes\win\
 G:\MVC_Core\AspNetCoreAjaxCrud\AspNetCoreAjaxCrud\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 G:\MVC_Core\AspNetCoreAjaxCrud\AspNetCoreAjaxCrud\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 G:\MVC_Core\AspNetCoreAjaxCrud\AspNetCoreAjaxCrud\bin\Debug\net8.0\libman.json
+G:\MVC_Core\AspNetCoreAjaxCrud\AspNetCoreAjaxCrud\obj\Debug\net8.0\AspNetCoreAjaxCrud.sourcelink.json

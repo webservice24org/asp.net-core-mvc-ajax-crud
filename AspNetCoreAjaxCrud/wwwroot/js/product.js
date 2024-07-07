@@ -6,14 +6,12 @@ function readUrl(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function (e) {
-            $('#imageFile')
-                .attr('src', e.target.result)
-                .width(100)
-                .height(100);
+            $('#imageFile').attr('src', e.target.result).show();
         };
         reader.readAsDataURL(input.files[0]);
     }
 }
+
 function GetProducts() {
     $.ajax({
         url: '/Product/GetProducts',
@@ -28,7 +26,7 @@ function GetProducts() {
                 object += '</tr>';
             } else {
                 $.each(response, function (index, item) {
-                    object += '<tr>';
+                    object += '<tr id="productRow_' + item.id + '">';
                     object += '<td>' + item.id + '</td>';
                     object += '<td>' + item.productName + '</td>';
                     object += '<td><img src="' + item.productImage + '" alt="' + item.productName + '" style="max-width: 100px; max-height: 100px;"></td>';
@@ -75,16 +73,18 @@ function Insert() {
         processData: false,
         success: function (response) {
             if (response.message) {
-                alert('Error: ' + response.message + '\nDetails: ' + (response.errors ? response.errors.join(', ') : response.error));
+                //alert('Error: ' + response.message + '\nDetails: ' + (response.errors ? response.errors.join(', ') : response.error));
+                toastr.error('Error: ' + response.message + '\nDetails: ' + (response.errors ? response.errors.join(', ') : response.error));
             } else {
                 GetProducts();
+                toastr.success('Product Inserted successfully');
                 $('#ProductModal').modal('hide');
                 $('#ProductModal').find('input').val('');
-                $('#imageFile').attr('src', ''); // Clear image preview if needed
+                $('#imageFile').attr('src', ''); 
             }
         },
         error: function () {
-            alert('Unable to Insert Data');
+            toastr.error('Unable to Insert Data');
         }
     });
 }
@@ -92,13 +92,13 @@ function Insert() {
 
 function Edit(id) {
     $.ajax({
-        url: '/Product/EditProducct?id=' + id, 
-        type: 'GET', 
+        url: '/Product/EditProduct?id=' + id,
+        type: 'GET',
         dataType: 'json',
         contentType: 'application/json;charset=utf-8',
         success: function (response) {
             if (response.message) {
-                alert('Error: Data Not Fetched!');
+                toastr.error('Error: Data Not Fetched!');
             } else {
                 $('#ProductModal').modal('show');
                 $('#ProductModalLabel').text("Edit Product");
@@ -108,42 +108,86 @@ function Edit(id) {
                 $('#ProductName').val(response.productName);
                 $('#Price').val(response.price);
                 $('#Qty').val(response.qty);
+                $('#ProductImageOld').val(response.productImage);
+
+                if (response.productImage) {
+                    $('#imageFile').attr('src', response.productImage).show();
+                } else {
+                    $('#imageFile').hide();
+                }
             }
         },
         error: function () {
-            alert('Unable to Fetch Product Data');
+            toastr.error('Unable to Fetch Product Data');
         }
     });
 }
 
-
 function Update() {
-    var formData = {
-        Id: parseInt($('#Id').val()), 
-        ProductName: $('#ProductName').val(),
-        Price: parseFloat($('#Price').val()),
-        Qty: parseInt($('#Qty').val())
-    };
+    var formData = new FormData();
+    formData.append('Id', $('#Id').val());
+    formData.append('ProductName', $('#ProductName').val());
+    formData.append('Price', parseFloat($('#Price').val()));
+    formData.append('Qty', parseInt($('#Qty').val()));
+
+    var imageFile = $('#ProductImage')[0].files[0];
+    if (imageFile) {
+        formData.append('ProductImageFile', imageFile);
+    }
 
     $.ajax({
         url: '/Product/UpdateProducct',
-        data: JSON.stringify(formData), 
+        data: formData,
         type: 'POST',
-        contentType: 'application/json; charset=utf-8',
-        dataType: 'json',
+        contentType: false,
+        processData: false,
         success: function (response) {
             if (response.message) {
-                alert('Error: ' + response.message + '\nDetails: ' + (response.errors ? response.errors.join(', ') : response.error));
+                toastr.error('Error: ' + response.message + '\nDetails: ' + (response.errors ? response.errors.join(', ') : response.error));
             } else {
                 GetProducts();
+                toastr.success('Product Update successfully');
                 $('#ProductModal').modal('hide');
                 $('#ProductModal').find('input').val('');
+                $('#imageFile').attr('src', '');
             }
         },
         error: function () {
-            alert('Unable to Update Product');
+            alert('Unable to Update Data');
         }
     });
 }
 
-
+function Delete(id) {
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $.ajax({
+                url: '/Product/DeleteProduct/' + id,
+                type: 'POST',
+                success: function (response) {
+                    Swal.fire(
+                        'Deleted!',
+                        'Your product has been deleted.',
+                        'success'
+                    );
+                    GetProducts();
+                },
+                error: function (xhr, status, error) {
+                    Swal.fire(
+                        'Error!',
+                        'There was an error deleting the product.',
+                        'error'
+                    );
+                }
+            });
+        }
+    });
+}
